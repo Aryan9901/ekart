@@ -21,8 +21,6 @@ const userSchema = new Schema(
   }
 );
 
-userSchema.index({ phone: 1 }, { unique: true });
-
 const User = model("User", userSchema);
 
 export default User;

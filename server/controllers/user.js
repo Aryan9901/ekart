@@ -1,7 +1,7 @@
-import User from "../models/user";
-import { generateTokens } from "../utils/generateToken";
+import User from "../models/user.js";
+import { generateTokens } from "../utils/generateToken.js";
 
-const loginOrSignup = async (req, res) => {
+export const loginOrSignup = async (req, res) => {
   const { phone, address } = req.body;
 
   try {
