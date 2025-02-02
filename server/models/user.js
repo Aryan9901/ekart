@@ -1,4 +1,4 @@
-import { model, Schema } from "mongoose";
+import mongoose, { model, Schema } from "mongoose";
 
 const userSchema = new Schema(
   {
@@ -16,11 +16,9 @@ const userSchema = new Schema(
   },
   {
     timestamps: true,
-    strict: true, // Ensures only defined fields are stored
-    minimize: false, // Prevents empty objects from being removed
   }
 );
 
-const User = model("User", userSchema);
+const User = mongoose.models.User || model("User", userSchema);
 
 export default User;
