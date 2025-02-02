@@ -1,6 +1,12 @@
 import dotenv from "dotenv";
 import express from "express";
 import userRoutes from "./routes/user.js";
+import categoryRoutes from "./routes/category.js";
+import productRoutes from "./routes/product.js";
+import orderRoutes from "./routes/order.js";
+import connectDB from "./config/connect.js";
+import { PORT } from "./config/config.js";
+import { buildAdminJS } from "./config/setup.js";
 
 dotenv.config();
 
@@ -10,14 +16,24 @@ app.use(express.json());
 
 // Routes
 app.use("/user", userRoutes);
+app.use("/category", categoryRoutes);
+app.use("/product", productRoutes);
+app.use("/order", orderRoutes);
 
 const start = async () => {
   try {
-    app.listen({ port: 3000, host: "0.0.0.0" }, (err, addr) => {
+    const instance = await connectDB(process.env.MONGODB_URI);
+    console.log(
+      `Mongodb connect on host ${instance.connection.host} and port ${instance.connection.port}`
+    );
+
+    buildAdminJS(app);
+
+    app.listen({ port: PORT, host: "0.0.0.0" }, (err, addr) => {
       if (err) {
         console.log(err);
       } else {
-        console.log(`Server started on http://localhost:3000`);
+        console.log(`Server started on http://localhost:${PORT}/admin`);
       }
     });
   } catch (error) {
