@@ -34,3 +34,4 @@ project.xcworkspace
 gradlew
 build/*
 packages/*
+kart/android/.gradle/*
