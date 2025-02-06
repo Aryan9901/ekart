@@ -1,16 +1,16 @@
 # General node_modules
-node_modules/
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+**/node_modules/
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
 
 # Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+**/logs/
+**/*.log
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
 
 # OS and IDE-specific files
 .DS_Store
@@ -20,36 +20,36 @@ Thumbs.db
 *.swp
 *.swo
 
-# React Native specific files
-android/.gradle/
-android/app/build/
-android/build/
-android/.cxx/
-android/.idea/
-android/local.properties
-android/app/src/main/assets/index.android.bundle
-android/app/src/main/assets/index.ios.bundle
+# React Native specific files inside kart
+kart/android/.gradle/
+kart/android/app/build/
+kart/android/build/
+kart/android/.cxx/
+kart/android/.idea/
+kart/android/local.properties
+kart/android/app/src/main/assets/index.android.bundle
+kart/android/app/src/main/assets/index.ios.bundle
 
-ios/Pods/
-ios/build/
-ios/.swiftpm/
-ios/.symlinks/
-ios/xcuserdata/
-ios/*.xcodeproj/project.xcworkspace/
-ios/*.xcworkspace/
-ios/*.xcuserdata/
-ios/Flutter/
-ios/fastlane/report.xml
-ios/fastlane/Preview.html
-ios/fastlane/screenshots/
-ios/.DS_Store
+kart/ios/Pods/
+kart/ios/build/
+kart/ios/.swiftpm/
+kart/ios/.symlinks/
+kart/ios/xcuserdata/
+kart/ios/*.xcodeproj/project.xcworkspace/
+kart/ios/*.xcworkspace/
+kart/ios/*.xcuserdata/
+kart/ios/Flutter/
+kart/ios/fastlane/report.xml
+kart/ios/fastlane/Preview.html
+kart/ios/fastlane/screenshots/
+kart/ios/.DS_Store
 
 # Metro bundler cache
-.expo/
-.expo-shared/
-.expo-source/
-dist/
-web-build/
+kart/.expo/
+kart/.expo-shared/
+kart/.expo-source/
+kart/dist/
+kart/web-build/
 
 # Misc
 *.keystore
@@ -57,7 +57,7 @@ web-build/
 *.bak
 *.rej
 
-# Server-specific ignores
+# Server-specific ignores inside server
 server/node_modules/
 server/dist/
 server/.env
@@ -68,3 +68,8 @@ server/debug.log
 # Git-specific
 .git/
 .gitignore
+**/*.o
+kart/android/app/.cxx/*
+kart/android/app/src/main/res/*
+kart/android/gradlew
+kart/android/gradlew.bat
