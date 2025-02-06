@@ -33,3 +33,4 @@ project.xcworkspace
 **/.xcode.env.local
 gradlew
 build/*
+packages/*
