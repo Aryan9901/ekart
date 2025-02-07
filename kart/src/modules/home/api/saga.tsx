@@ -17,4 +17,4 @@ function* homeSaga() {
   yield takeEvery(GET_HOME_CONTENT, fetchApiDataSaga);
 }
 
-export default homeSaga();
+export default homeSaga;
