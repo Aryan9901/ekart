@@ -3,7 +3,6 @@ import { generateTokens } from "../utils/generateToken.js";
 
 export const loginOrSignup = async (req, res) => {
   const { phone, address } = req.body;
-
   try {
     let user = await User.findOne({ phone });
     if (user) {
