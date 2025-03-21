@@ -1,6 +1,5 @@
 import {Platform} from 'react-native';
 
-
 // for emulator or simulator device
 export const BASE_URL =
   Platform.OS == 'android'
