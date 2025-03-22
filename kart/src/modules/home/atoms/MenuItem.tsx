@@ -9,7 +9,6 @@ import {
 import React, {FC} from 'react';
 import {RFValue} from 'react-native-responsive-fontsize';
 
-
 interface MenuItemProps {
   item: {name: string; iconUri: string};
   isFocused: boolean;
