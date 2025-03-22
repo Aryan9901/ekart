@@ -7,6 +7,7 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
+
 const Dots = ({active, index}: {active: number; index: number}) => {
   const progress = useSharedValue(0);
 
