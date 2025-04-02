@@ -5,6 +5,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {FC} from 'react';
 import {navigationRef} from './NavigationUtil';
 import MainNavigator from './MainNavigator';
+import Products from '@modules/products';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,7 @@ const Navigation: FC = () => {
         initialRouteName="Splash">
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="MainNavigator" component={MainNavigator} />
+        <Stack.Screen name="Products" component={Products} />
       </Stack.Navigator>
     </NavigationContainer>
   );
