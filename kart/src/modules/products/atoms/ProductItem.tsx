@@ -51,7 +51,7 @@ export default ProductItem;
 const styles = StyleSheet.create({
   productCard: {
     backgroundColor: '#fff',
-    width: '40%',
+    width: '50%',
     overflow: 'hidden',
     marginBottom: 10,
   },

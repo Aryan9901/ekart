@@ -26,26 +26,16 @@ const SearchBar: FC<searchBarProps> = ({cartLength}) => {
           placeholder="Search products"
           placeholderTextColor={'#666'}
         />
-        <Icon
-          size={24}
-          name="heart-outline"
-          iconFamily="Ionicons"
-          color="#000"
-        />
-        <Pressable>
-          <Icon
-            size={24}
-            name="cart-sharp"
-            iconFamily="Ionicons"
-            color="#000"
-          />
-          {cartLength > 0 && (
-            <View style={styles.badge}>
-              <Text style={styles.badgeText}>{cartLength}</Text>
-            </View>
-          )}
-        </Pressable>
       </View>
+      <Icon size={24} name="heart-outline" iconFamily="Ionicons" color="#000" />
+      <Pressable>
+        <Icon size={24} name="cart-sharp" iconFamily="Ionicons" color="#000" />
+        {cartLength > 0 && (
+          <View style={styles.badge}>
+            <Text style={styles.badgeText}>{cartLength}</Text>
+          </View>
+        )}
+      </Pressable>
     </View>
   );
 };
@@ -81,18 +71,18 @@ const styles = StyleSheet.create({
   },
   badge: {
     position: 'absolute',
-    top: -5,
-    right: -6,
+    top: -7,
+    right: -8,
     backgroundColor: 'red',
     borderRadius: 10,
-    width: 16,
-    height: 16,
+    width: 20,
+    height: 20,
     justifyContent: 'center',
     alignItems: 'center',
   },
   badgeText: {
     color: '#fff',
-    fontSize: RFValue(12),
+    fontSize: RFValue(10),
     fontWeight: 'bold',
   },
 });

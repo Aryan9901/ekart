@@ -31,7 +31,7 @@ const Products: FC = () => {
   return (
     <View style={styles.container}>
       <SafeAreaView />
-      <SearchBar cartLength={0} />
+      <SearchBar cartLength={12} />
       <FlatList
         data={products}
         bounces={false}
@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
   },
   listContainer: {
     paddingBottom: 30,
+    paddingTop: 20,
     backgroundColor: '#fff',
   },
   emptyContainer: {

@@ -36,7 +36,7 @@ const AdCarousal: FC<{data: any}> = ({data}) => {
           {data?.data?.map((item: any, index: any) => {
             return (
               <Text>
-                <Dots active={active} index={index} key={index} />
+                <Dots active={active} index={index + 1} key={index} />
               </Text>
             );
           })}
