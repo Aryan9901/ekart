@@ -1,6 +1,7 @@
 import mongoose, { model, Schema } from "mongoose";
 
 const itemSchema = new Schema({
+  
   product: {
     type: Schema.Types.ObjectId,
     ref: "Product",

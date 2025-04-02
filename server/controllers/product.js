@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
 import Product from "../models/product.js";
 
+
 export const getProductByCategoryId = async (req, res) => {
+  
   try {
     const { category } = req.params;
 

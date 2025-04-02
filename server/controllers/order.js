@@ -4,6 +4,7 @@ import Transaction from "../models/transaction.js";
 import Razorpay from "razorpay";
 
 export const createTransaction = async (req, res) => {
+  
   const { amount, userId } = req.body;
   const razorpay = new Razorpay({
     key_id: process.env.RAZOR_PAY_KEY_ID,
