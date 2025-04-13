@@ -3,6 +3,7 @@ import React from 'react';
 import {navigate} from '@navigation/NavigationUtil';
 import Icon from '@components/atom/Icon';
 import {RFValue} from 'react-native-responsive-fontsize';
+import UniversalAdd from './UniversalAdd';
 
 const ProductItem = ({item, isOdd}: {item: any; isOdd: boolean}) => {
   return (
@@ -40,6 +41,7 @@ const ProductItem = ({item, isOdd}: {item: any; isOdd: boolean}) => {
           <View style={styles.hotDealContainer}>
             <Text style={styles.hotDealText}>Hot Deal</Text>
           </View>
+          <UniversalAdd item={item} />
         </View>
       </View>
     </View>
@@ -51,7 +53,7 @@ export default ProductItem;
 const styles = StyleSheet.create({
   productCard: {
     backgroundColor: '#fff',
-    width: '50%',
+    width: '49%',
     overflow: 'hidden',
     marginBottom: 10,
   },
