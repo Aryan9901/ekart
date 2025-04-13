@@ -6,6 +6,7 @@ import {FC} from 'react';
 import {navigationRef} from './NavigationUtil';
 import MainNavigator from './MainNavigator';
 import Products from '@modules/products';
+import Cart from '@modules/cart';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,7 @@ const Navigation: FC = () => {
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="MainNavigator" component={MainNavigator} />
         <Stack.Screen name="Products" component={Products} />
+        <Stack.Screen name="Cart" component={Cart} />
       </Stack.Navigator>
     </NavigationContainer>
   );
