@@ -14,6 +14,7 @@ import MenuHeader from './molecules/MenuHeader';
 import SearchBar from './molecules/SearchBar';
 import MainList from './templates/MainList';
 
+
 const Home = () => {
   const insets = useSafeAreaInsets();
   const scrollYGlobal = useSharedValue(0);
