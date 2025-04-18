@@ -17,7 +17,6 @@ const Cart = () => {
     return <OrderItem item={item} />;
   };
 
-
   return (
     <CustomSafeAreaView>
       <View style={styles.container}>
