@@ -18,6 +18,7 @@ const Cart = () => {
   };
 
 
+  
   return (
     <CustomSafeAreaView>
       <View style={styles.container}>
