@@ -8,7 +8,6 @@ import {FlatList, Image, Text, TouchableOpacity, View} from 'react-native';
 import LoginModal from './molecules/LoginModal';
 import {formatDate} from '@utils/Constants';
 
-
 const Account = () => {
   const route = useRoute();
   const item = route?.params as any;
