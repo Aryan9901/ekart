@@ -4,6 +4,7 @@ import {RFValue} from 'react-native-responsive-fontsize';
 import Icon from '@components/atom/Icon';
 import {goBack, navigate} from '@navigation/NavigationUtil';
 
+
 interface searchBarProps {
   cartLength: number;
 }
