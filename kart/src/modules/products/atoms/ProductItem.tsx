@@ -5,6 +5,7 @@ import Icon from '@components/atom/Icon';
 import {RFValue} from 'react-native-responsive-fontsize';
 import UniversalAdd from './UniversalAdd';
 
+
 const ProductItem = ({item, isOdd}: {item: any; isOdd: boolean}) => {
   return (
     <View style={[styles.productCard, {marginRight: isOdd ? 0 : 10}]}>
