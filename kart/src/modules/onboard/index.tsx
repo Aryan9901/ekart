@@ -4,6 +4,7 @@ import {Colors, screenHeight, screenWidth} from '@utils/Constants';
 import {resetAndNavigate} from '@navigation/NavigationUtil';
 
 
+
 const Splash: FC = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
