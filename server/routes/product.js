@@ -7,6 +7,4 @@ router.route("/:category").get(getProductByCategoryId);
 
 
 
-
-
 export default router;
