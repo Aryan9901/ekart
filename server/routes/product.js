@@ -10,8 +10,6 @@ const router = Router();
 
 
 
-
-
 router.route("/:category").get(getProductByCategoryId);
 
 
