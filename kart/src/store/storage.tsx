@@ -5,8 +5,6 @@ const storage = new MMKV();
 
 
 
-
-
 const reduxStorage = {
   setItem: (key: string, val: any) => {
     storage.set(key, val);
